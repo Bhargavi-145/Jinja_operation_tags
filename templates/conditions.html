@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Jinja Operational Tags</h1>
+
+        <!-- {% if age > 18 %}
+            <h1>inside if block</h1>
+            <h1>{{age}}</h1>
+        {% endif %} -->
+
+        {% if age > 18 %}
+            <h1>if condtion statement</h1>
+            <h1>{{name}} is {{age}} years old.</h1>
+        {% else %}
+            <h1>else block statements</h1>
+            <h1>{{age}}</h1>
+        {% endif %}
+
+        <!-- {% if marks > 80 %}
+            <h1>if block statement</h1>
+            <h1>{{name}} got {{marks}} marks</h1>
+        {% elif marks > 60 and marks < 80 %}
+            <h1>elif block 1</h1>
+            <h1>{{name}} got good marks</h1>
+        {% elif marks > 35 and marks < 60 %}
+            <h1>elif block 2</h1>
+            <h1>{{name}} got pass marks</h1>
+        {% else %}
+            <h1>else block statement</h1>
+            <h1>{{name}} has failed.</h1>
+        {% endif %} -->
+
+
+        {% if age < 18 %}
+            {% if age > 18 %}
+            <h1>if block statement</h1>
+            <h1>{{name}} eligible to vote.</h1>
+            {% endif %}
+        {% else %}
+            {% if age > 25 %}
+                <h1>else if block statements</h1>
+            {% else %}
+                <h1>if else 2 block statement</h1>
+            {% endif %}
+        {% endif %}
+        
+
+    </center>
+</body>
+</html>
